@@ -71,3 +71,6 @@ shift + alt - 7 : yabai -m window --space 7;
 ctrl + alt - q : brew services stop yabai
 ctrl + alt - s : brew services start yabai
 ctrl + alt - r : brew services restart yabai
+
+# swap windows between displays
+shift + alt - s : yabai -m window --swap east || $(yabai -m window --display east; yabai -m display --focus east; yabai -m window --focus prev; yabai -m window --display west; yabai -m display --focus west)
